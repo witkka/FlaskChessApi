@@ -4,6 +4,17 @@ This is README.txt,  user guide.
 Author: Katarzyna Witkowska, https://github.com/witkka
 =========================================================================
 
+This project is missing secret key, to mend this:
+- create instances folder in the root dir
+- create empty __init__.py file in the instances folder
+- create config.py file in the instances folder
+- create variable SECRET_KEY in the config.py file
+- generate secret key:
+  >>> import secrets
+  >>> secrets.token_urlsafe(16)
+  
+-------------------------------------------------------------------------
+
 This package contains flask api and test data.
 
 To install the package:
